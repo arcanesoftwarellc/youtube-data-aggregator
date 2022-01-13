@@ -5,7 +5,12 @@
     "author": "Arcane Software LLC",
     "license": "UNLICENSED",
     "prettier": "@arcanesoftware/prettier-config",
+    "scripts": {
+        "update-types": "npx openapi-typescript https://zujbcgehiicimqkjpiyi.supabase.co/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MTQyMTAzOCwiZXhwIjoxOTU2OTk3MDM4fQ.QlmTgV0HPnu07tf3NDEVzGiGVsPU1pFWsiK6rwCG3W0 --output types/database/index.ts"
+    },
     "dependencies": {
+        "@supabase/supabase-js": "^1.29.1",
+        "googleapis": "^92.0.0",
         "next": "^12.0.7"
     },
     "devDependencies": {
