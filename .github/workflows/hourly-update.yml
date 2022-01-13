@@ -1,0 +1,12 @@
+name: hourly-update
+on:
+    schedule:
+        - cron: '0 * * * *'
+jobs:
+    cron:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Call API
+              run: |
+                  curl --request POST \
+                  --url 'https://youtube-data-aggregator.vercel.app/api/get-videos'
