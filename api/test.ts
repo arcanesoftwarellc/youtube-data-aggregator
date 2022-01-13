@@ -5,5 +5,5 @@ export default function handler(
     response: NextApiResponse
 ) {
     const { name } = request.query
-    response.end(`Hello ${name}!`)
+    response.send(`Hello ${name}!`)
 }
