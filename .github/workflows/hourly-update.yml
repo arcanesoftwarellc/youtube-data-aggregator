@@ -8,5 +8,4 @@ jobs:
         steps:
             - name: Call API
               run: |
-                  curl --request POST \
-                  --url 'https://youtube-data-aggregator.vercel.app/api/get-videos'
+                  curl 'https://youtube-data-aggregator.vercel.app/api/get-videos'
